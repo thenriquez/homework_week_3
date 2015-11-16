@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counting Faces</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<div class="jumbotron">
+  <h1>Count the Faces</h1>
+  <p>See how many faces you can click before the time runs out!</p>
+  <br />
+  <p><a class="btn btn-primary btn-lg" href="#" role="button" id="start-countdown">Start</a></p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10933967_10101852935210338_213949053249401421_n.jpg?oh=e86d9826b8e031156fab49a52d45e862&oe=56BEB9E3" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10173804_10203291817079731_8710951792114710076_n.jpg?oh=a2333c8b0ad042e93630b34dd153d844&oe=56AC7AC9" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11751859_10204779713996224_6120545138041508496_n.jpg?oh=e0007f4768b083642372723d1d6868b7&oe=56F24E51" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/11239647_10207464475115085_3915612022181902684_n.jpg?oh=b52b464d495d54711afaefffa69b6b8e&oe=56EE7D41" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/1549404_10201594008555579_1265549566_n.jpg?oh=3f70263d50d199cdea6f5b2922765f11&oe=56B9D776" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/10388098_663103640441527_502538768170563921_n.jpg?oh=9f184f6e8126f065c11416f11e50e344&oe=56F93D15" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/8811_1379910188889350_655120926_n.jpg?oh=fb15cede4cdd3e9698b248f0e6479540&oe=56F1647B" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10377004_10152400388843190_3283296965782954236_n.jpg?oh=e719ce0b9ce256252d9751bcccd0c553&oe=56BD9E39" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xfl1/v/t1.0-9/12241217_10156171554405335_4815118213473212772_n.jpg?oh=27d54b0ed5b0d554e253f9450daf8a5b&oe=56BA413E" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10471439_10153742135280746_8600774183584791761_n.jpg?oh=aece948f2c56346505bb04999ec6fafd&oe=56B6B674" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1513718_679354102096557_568330096_n.jpg?oh=b435ddf539abbd5f18873abe972094c4&oe=56AE4F5A" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xtp1/t31.0-8/p960x960/11865348_10153993701407119_4959827498342462993_o.jpg" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">  
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-ash2/v/t1.0-9/565046_10102986351474589_1911031859_n.jpg?oh=59237a87de0a1367c5bc421bc797708c&oe=56BC5261" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-ash2/v/t1.0-9/1939510_10205628471896295_5231181107514849228_n.jpg?oh=14cd74fab10f93aeeb86e7726de3889e&oe=56F024C7" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10933890_10152498661806856_5461113995396255139_n.jpg?oh=4acde7c444aaf97450b6f97cbd7a3161&oe=56BEF2CB" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/11825201_10206920362824733_3222664901685184560_n.jpg?oh=1155509d034d37d085a5ba4ce15ddf39&oe=56FA3621" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/419113_10101387095755869_124873293_n.jpg?oh=835f8f2f7f9b5527ccb2a7e2fb77e843&oe=56BBAC8C" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/480761_10200551560087043_1487105309_n.jpg?oh=4412a30039ba332975d73636849ae91a&oe=56B2B2BC" alt="Sorry, this photo is missing :("> 
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/10176087_10152494031248144_3154042352830369997_n.jpg?oh=09fad16393b0877628ac850c89cfcafd&oe=56B74734" alt="Sorry, this photo is missing :(">
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <img class="img-thumbnail" src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/994829_10200165998535915_1897186830_n.jpg?oh=fc65bd8f8d300f8db5409c4503b37a20&oe=56B23B66" alt="Sorry, this photo is missing :(">
+    </div>
+  </div>
+</div>
+
+<script src="scripts/main.js"></script>
+
+</body>
+</html>

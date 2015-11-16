@@ -1,0 +1,37 @@
+h3 {
+  text-align: center;
+}
+
+.page-header {
+  background: #58FFFF;
+}
+
+body {
+  background: #B2521A;
+}
+
+.jumbotron {
+  background: #58FFFF;
+  border-bottom: 3px solid white;
+}
+
+img {
+  margin-bottom: 25px;
+}
+
+img:hover {
+  opacity: 0.6;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.btn.btn-primary.btn-lg {
+  background: #B2521A;
+  text-align: center;
+}
+
+.btn.btn-primary.btn-lg:hover {
+  opacity: 0.6;
+}
