@@ -1,0 +1,1 @@
+<?php require("homework_3.html"); ?>
