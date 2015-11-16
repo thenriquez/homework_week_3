@@ -1,9 +1,13 @@
 var imageTag = document.getElementsByTagName("img");
+var buttonTag = document.getElementById("start-countdown");
 var count = 0;
 
-function countDown () {
-  setTimeOut(sayHello,5000);
+buttonTag.addEventListener("click", initializeTimeoutFunction);
+
+function initializeTimeoutFunction () {
+  setTimeout(gameResult, 20000);
 }
+
 
 for (var i = 0; i < imageTag.length; i++) {
   imageTag[i].addEventListener("click", sayHello);
@@ -12,9 +16,21 @@ for (var i = 0; i < imageTag.length; i++) {
 function sayHello () {
   if (this.getAttribute("data-state") !== "clicked") {
     count++;
-    alert(count);
     this.setAttribute('data-state', "clicked");
+    return count;
   } else {
-    alert(count);
+    return count;
   }
+}
+
+function gameResult () {
+
+  alert("You clicked " + count + " faces.");
+
+  buttonTag.removeEventListener("click", initializeTimeoutFunction);
+
+  for (var i = 0; i < imageTag.length; i++) {
+    imageTag[i].removeEventListener("click", sayHello);
+  }
+
 }
